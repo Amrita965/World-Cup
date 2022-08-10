@@ -146,6 +146,26 @@ main {
     margin-bottom: 20px;
 }
 
+.blog-duration-chat {
+    display: flex;
+    justify-content: space-between;
+    width: 143px;
+}
+
+.blog-duration-char p, img {
+    margin-right: 10px;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+}
+
 .blog__content {
     padding: 20px;
 }
