@@ -87,7 +87,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ff1818;
     background: #161616;
     border-radius: 10px;
     height: 312px;
@@ -153,7 +152,11 @@ main {
 
 @media only screen and (max-width: 688px) {
     body {
-        margin: 16px;
+        margin: 20px;
+    }
+
+    main {
+        margin: 0px;
     }
 
     .top-banner {
@@ -184,9 +187,62 @@ main {
         text-align: center;
     }
 
+    .main-contents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation-container {
+        position: static;
+        top: unset;
+        display: flex;
+        justify-content: center;
+        background: #ffffff;
+        border-radius: unset;
+        height: fit-content;
+        margin: 24px 0px;
+    
+    }
+
+    .navigation-container a {
+        margin: unset;
+        text-align: center;
+        font-size: 20px;
+        border: 1px solid lightgrey;
+    }
+
+    a.link-container__link-1 {
+        padding: 9px 16px;
+    }
+
+    a.link-container__link-2 {
+        padding: 9px 34px;
+    }
+
+    a.link-container__link-3 {
+        padding: 11px 60px;
+    }
+
+    .navigation-container .link-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 16px;
+        justify-items: center;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
 
 
 }
+
+
+
+
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
 
@@ -194,6 +250,7 @@ main {
         width: 100%;
         padding: 30px;
     }
+    
 
     .top-banner {
         margin: 0px;
@@ -228,7 +285,7 @@ main {
     
     }
 
-    .navigation-container .link-container__list {
+    .navigation-container .link-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 22px;
