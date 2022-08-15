@@ -59,15 +59,22 @@ div.banner-content.flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DD0000;
     font-size: 20px;
     border-radius: 5px;
     padding: 16px 25px;
     width: 187px;
     height: 56px;
     text-decoration: none;
+    animation: example 3s infinite;
 
 }
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: blueviolet;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
 
 .banner-content__btn .fa-angle-right {
     margin-left: 10px;
@@ -133,6 +140,11 @@ main {
 .blog {
     border: 1px solid lightgrey;
     border-radius: 10px;
+    transition: transform 2s ease 1s;
+}
+
+.blog:hover {
+    transform: scale(1.1);
 }
 
 .blog__thumbnail {
@@ -178,6 +190,24 @@ main {
     padding: 20px;
 }
 
+.view-btn {
+    display: none;
+    justify-content: center;
+}
+
+.view-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 131px;
+    height: 47px;
+    background-color: #DD0000;;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
 .footer-container {
     background-color:#161616;
     height: 444px;
@@ -219,6 +249,10 @@ main {
     margin-right: 50px;
     line-height: 50px;
 
+}
+.footer-container__link a:hover{
+    text-decoration: underline;
+    
 }
 
 .social-media {
@@ -389,7 +423,7 @@ main {
     
 
     .top-banner {
-        margin: 0px;
+        padding: 61px 17px 0px 76px;
     }
 
     .banner-content__heading {
@@ -410,12 +444,12 @@ main {
     }
 
     header {
-        padding: 30px;
+        padding: 0px 30px;
     }
 
     main {
         margin: 70px 0px;
-        padding: 30px;
+        padding: 0px 30px;
     }
     
     .main-contents {
@@ -460,6 +494,13 @@ main {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 24px;
     }
+
+    .view-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
 
     .footer-container {
         height: 345px;
