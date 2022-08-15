@@ -69,6 +69,10 @@ div.banner-content.flex-container {
 
 }
 
+.banner-content__btn .fa-angle-right {
+    margin-left: 10px;
+}
+
 main {
     max-width: 1240px;
     margin: 130px auto;
@@ -204,6 +208,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     width: 87%;
+    margin-bottom: 50px;
     
 }
 
@@ -214,6 +219,16 @@ main {
     margin-right: 50px;
     line-height: 50px;
 
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    color: #B9B9B9;
+    font-size: 30px;
+    margin-right: 20px;
 }
 
 @media only screen and (max-width: 688px) {
@@ -237,16 +252,21 @@ main {
         width: 100%;
         flex-direction: column;
         justify-content: center;
-        padding: 28px 38px 0px 38px;
+        padding: 0px;
         margin: 0px;
     }
 
     .banner-content {
+        padding: 28px 38px;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
 
+    }
+
+    .flex-container {
+        padding: 0px 10px;
     }
 
     .banner-content__heading {
@@ -263,8 +283,17 @@ main {
 
     .banner-content__btn {
         height: 40px;
-        width: 161px;
+        width: 187px;
     
+    }
+
+    .banner-content__btn .fa-angle-right {
+        margin-left: 10px;
+    }
+    
+
+    .banner-content__image {
+        margin: 0px;
     }
 
     .main-contents {
@@ -316,6 +345,10 @@ main {
         
     }
 
+    .footer-container {
+        height: 500px;
+    }
+
     .footer-container__title{
         margin-bottom: 24px;
     }
@@ -330,7 +363,7 @@ main {
     .footer-container__link {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-       
+        margin-bottom: 24px;
         
     }
 
@@ -366,6 +399,14 @@ main {
 
     .banner-content__description {
         font-size: 14px;
+    }
+
+    .banner-content__btn {
+        width: 187px;
+    }
+
+    .banner-content__btn .fa-angle-right {
+        margin-left: 10px;
     }
 
     header {
@@ -418,6 +459,22 @@ main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 24px;
+    }
+
+    .footer-container {
+        height: 345px;
+    }
+
+    .footer-container__title {
+        margin-bottom: 30px;
+    }
+
+    .footer-container__horizontal-line {
+        margin-bottom: 30px;
+    }
+
+    .footer-container__link {
+        margin-bottom: 30px;
     }
 
 
