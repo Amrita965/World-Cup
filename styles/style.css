@@ -7,10 +7,13 @@
 }
 
 body {
-
-    max-width: 1240px;
-    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
+    
+}
+
+header {
+    max-width: 1240px;
+    margin: 50px auto 0px;
 }
 
 .top-banner {
@@ -67,7 +70,8 @@ div.banner-content.flex-container {
 }
 
 main {
-    margin: 130px 0px;
+    max-width: 1240px;
+    margin: 130px auto;
 }
 
 .banner-content__image {
@@ -170,13 +174,63 @@ main {
     padding: 20px;
 }
 
+.footer-container {
+    background-color:#161616;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container__horizontal-line {
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.footer-container__title {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.footer-container {
+    display: flex;
+    
+    
+}
+
+.footer-container__link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 87%;
+    
+}
+
+
+.footer-container__link a{
+    text-decoration: none;
+    color: #B9B9B9;
+    margin-right: 50px;
+    line-height: 50px;
+
+}
+
 @media only screen and (max-width: 688px) {
     body {
-        margin: 20px;
+        width: 100%;
     }
 
     main {
-        margin: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0px 0px 24px;
+    }
+
+    header {
+        margin-top: 28px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .top-banner {
@@ -262,6 +316,30 @@ main {
         
     }
 
+    .footer-container__title{
+        margin-bottom: 24px;
+    }
+
+    
+    .footer-container__horizontal-line {
+        margin-bottom: 24px;
+    }
+
+   
+
+    .footer-container__link {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+       
+        
+    }
+
+    .footer-container__link a{
+        margin: 0px;
+        text-align: center;
+        
+    }
+
 
 
 }
@@ -274,7 +352,6 @@ main {
 
     body {
         width: 100%;
-        padding: 30px;
     }
     
 
@@ -284,15 +361,20 @@ main {
 
     .banner-content__heading {
         font-size: 40px;
-        line-height: 33px;
+        line-height: 50px;
     }
 
     .banner-content__description {
         font-size: 14px;
     }
 
+    header {
+        padding: 30px;
+    }
+
     main {
         margin: 70px 0px;
+        padding: 30px;
     }
     
     .main-contents {
